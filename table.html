@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="sona.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        table {
+            width: 50%;
+            height: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+        </colgroup>
+
+        <h1>Data_Table</h1>
+        <thead>
+            <tr>
+                <th>SNO.</th>
+                <th>name</th>
+                <th>lname</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">sona</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>mina</td>
+                <td>Roy</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <!-- javascript operation -->
+    <p id="demo"></p>
+    <script>
+        function myfunction() {
+
+            document.getElementById("demo").innerHTML = "Hello Vini";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
+    <button type="button " onclick="myfunction()">click</button>
+    <!-- Clouse javascript operation -->
+
+
+    <!-- File Path operation -->
+
+    <img src="sona1.jpg">
+    <img src="image/sona1.jpg">
+    <img src="../image/sona1.jpg">
+    <!-- End File Path operation -->
+
+
+    <!-- FORM -->
+    <form action="#" method="post" novalidate autocomplete="on" enctype="application/x-www-form-urlencoded">
+
+        <label for="fname">Enter the first name</label><br>
+        <input type="email" name="fname" value="" id="txtname" placeholder="Enter the first name "
+            onkeypress="return Validate3(event);" required /><br>
+        <span id="error1" style="color: red"></span>
+
+
+        <label for="lastname">Enter the last name </label><br>
+        <input type="datetime-local" name="lastname" value=""><br><br>
+        <input type="image" src="sona.jpg" alt="sona" width="48" height="48"><br><br>
+        <input type="" name="lastname" value=""><br><br>
+
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+
+        <input type="submit" name="submit" value="submit" onclick="alert(are your sure the data storege)">
+        <input type="reset">
+
+
+
+    </form>
+    <!-- End form -->
+
+
+    <script type="text/javascript">
+        function Validate3(h) {
+            var keyCode = h.keyCode || h.which;
+
+            var lblError = document.getElementById("error1");
+            lblError.innerHTML = "";
+
+            //Regex for Valid Characters i.e. Alphabets.
+            var regex = /^[A-Za-z\s]+$/;
+            var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+                lblError.innerHTML = "Only Alphabets allowed.";
+            }
+
+            return isValid;
+        }
+    </script>
+
+
+
+
+
+
+</html>

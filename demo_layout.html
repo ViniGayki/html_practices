@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial;
+      margin: 0%;
+      background: #f1f1f1;
+      padding: 0%;
+
+    }
+
+    h1 {
+      font-size: large;
+      color: blue;
+      text-decoration: underline wavy;
+      text-align: center;
+    }
+
+    header {
+      padding: 5px 0;
+      background: lightcoral;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0%;
+    }
+
+    ul li {
+      list-style-type: none;
+      display: inline;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    ul a {
+      padding: 10px;
+    }
+
+    nav {
+      background: rgb(99, 74, 184);
+      position: sticky;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: 0%;
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: red;
+      color: #f1f1f1;
+    }
+
+    nav a {
+      display: inline;
+      padding: 0 20px;
+      color: #f1f1f1;
+    }
+
+    img {
+      width: 100%;
+      height: 150px;
+      opacity: 0.1;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+    .column {
+      float: left;
+      width: 30%;
+      padding: 20px;
+    }
+
+    footer {
+
+      background-color: aqua;
+      color: #f1f1f1;
+      padding: 25px;
+      margin-top: 200px;
+      text-align: center;
+    }
+
+    footer a {
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>MY LAYOUT</h1>
+  <header>
+    <ul>
+      <li><a href="http/home">Home</a></li>
+
+      <li><a href="http/about">About</a></li>
+
+      <li><a href="http/contact">Contact</a></li>
+
+      <li><a href="http/detais">Details</a></li>
+    </ul>
+  </header>
+  <nav>
+    <a href="link">link1</a>
+    <a href="link">link2</a>
+    <a href="link">link3</a>
+    <a href="link">link4</a>
+    <a href="link">link5</a>
+  </nav>
+  <img src="image/sona.jpg">
+  <div class="column">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis, labore consectetur dolore asperiores
+      aspernatur repudiandae provident! Cum natus at optio, laudantium odit eos quos voluptatibus dignissimos, debitis
+      qui eveniet!250
+    </p>
+  </div>
+  <div class="column">
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet ipsa nobis, sequi modi maxime
+      officiis sed cupiditate voluptate ipsum consectetur tenetur quos temporibus veniam, animi cum velit ipsam eos!</p>
+  </div>
+  <div class="column">
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet ipsa nobis, sequi modi maxime
+      officiis sed cupiditate voluptate ipsum consectetur tenetur quos temporibus veniam, animi cum velit ipsam eos!</p>
+  </div>
+
+  <footer>
+    <a href="link">link1</a>
+    <a href="link">link2</a>
+    <a href="link">link3</a>
+    <a href="link">link4</a>
+    <a href="link">link5</a>
+
+  </footer>
+
+</body>
+
+</html>

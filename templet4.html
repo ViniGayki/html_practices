@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templet-4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            position: relative;
+            line-height: 1.5;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #c786c7;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+
+        }
+
+
+        .heading {
+            font-size: 36px;
+            color: black;
+            margin: 24px 0;
+            text-transform: capitalize;
+        }
+
+
+
+        a {
+
+            margin-left: 16px;
+            margin-right: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #454ce7;
+            font-weight: 600;
+        }
+
+        main {
+
+            display: block;
+        }
+
+        img {
+
+
+            height: 442.69px;
+            width: 600px;
+            margin-bottom: 20px;
+
+        }
+
+        .blog {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .time {
+            color: #454ce7;
+            margin: 16px 0;
+            text-transform: uppercase;
+        }
+
+        .text {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .footer {
+            background-color: #9090e8;
+            text-align: center;
+            padding: 20px;
+            margin-top: 24px;
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Blog">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog">
+            <article>
+                <div class="time">
+                    <time datetime="25-11-2015">Novemeber 25 2015</time>
+                </div>
+                <div>
+                    <img src="image/sona.jpg">
+                </div>
+                <h2 class="heading">This Is My First Article</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo architecto
+                    aliquam,
+                    repellendus mollitia in magni ipsum animi. Ratione blanditiis sequi nisi tempore, nulla incidunt
+                    aliquam!
+                    Beatae nam quae officia?</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident
+                    nisi
+                    temporibus eligendi! Facere, natus eos quas magni cupiditate eum quis corrupti a molestias
+                    necessitatibus
+                    aut accusantium harum placeat iste!</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt esse
+                    dolore cum
+                    doloribus assumenda incidunt ad, vel expedita inventore maxime ea quas ullam voluptatum nostrum
+                    perspiciatis. Inventore, consequuntur ratione.</p>
+                <a href="#">MORE</a>
+                <hr>
+            </article>
+            <article>
+                <div class="time">
+                    <time datetime="25-11-2015">December 25 2015</time>
+                </div>
+                <div>
+                    <img src="image/puppies.jpg" alt="puppies">
+                </div>
+                <h2 class="heading">This Is Another Article</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo architecto
+                    aliquam,
+                    repellendus mollitia in magni ipsum animi. Ratione blanditiis sequi nisi tempore, nulla incidunt
+                    aliquam!
+                    Beatae nam quae officia?</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident
+                    nisi
+                    temporibus eligendi! Facere, natus eos quas magni cupiditate eum quis corrupti a molestias
+                    necessitatibus
+                    aut accusantium harum placeat iste!</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt esse
+                    dolore cum
+                    doloribus assumenda incidunt ad, vel expedita inventore maxime ea quas ullam voluptatum nostrum
+                    perspiciatis. Inventore, consequuntur ratione.</p>
+                <a href="#">READ MORE</a>
+                <hr>
+            </article>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <small>© AltCampus 2019</small>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        body {
+
+            margin: 0%;
+            line-height: 1.5;
+
+        }
+
+        header {
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: blue;
+            display: inline;
+            top: 0;
+            padding: 5px;
+            text-align: center;
+            font-size: larger;
+            color: white;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            display: block;
+            background-color: #f70303;
+        }
+
+        img {
+
+            margin-top: 10px;
+            width: 200px;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        p {
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+            top: 150px;
+            padding-bottom: 2000px;
+
+
+        }
+
+        .box {
+            position: absolute;
+            z-index: 3;
+            /* green box will be above black box */
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            margin-top: -150px;
+            height: 150px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Home
+        Contact
+        Other
+        Details
+        Basicinfo
+    </header><br>
+    <!-- second type of //header// -->
+    <ul>
+
+        <li><a href="#HOme">Home</a></li>
+        <li><a href="#New">New</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+    <img src="image/sona.jpg">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia eum doloremque, sit eveniet placeat
+        repudiandae officiis libero fugit accusamus reiciendis ipsum. Aut incidunt eum magnam, libero aperiam dolores
+        ipsa.</p>
+    <div class="box"><b>Box position is-3</b></div>
+
+
+
+
+</body>
+</div>
+</body>
+
+</html>

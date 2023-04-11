@@ -1,0 +1,239 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <title>PETS WELLNESS GROOMING</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("image/puppies.jpg");
+
+        }
+
+        */ .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width:100px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" style="color:navy"><b> Pets wellness grooming</b> </h1>
+    <h2 align="center"><i>
+            <marquee>Excellent care for your pet.</marquee>
+        </i></h2>
+
+    <div class="navbar">
+        <a class="active" href=""><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href=""><i class="fa fa-fw fa-about us"></i> About us</a>
+        <a href=""><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href=""><i class="fa fa-fw fa-user"></i>Book a Appointment</a>
+        <a href=""><i class="fa fa-fw fa-Search "></i>Search </a>
+    </div>
+    <br>
+    <br>
+    <h2 style="color=red"><b> BRINGING PETCARE TO YOUR FINGERTIPS! </b></h2>
+    <p style="font-family:verdana">At Pets wellness grooming, our mission is to give pets their best possible life by
+        empowering the people who love them. We combine science,data, and technology to create products
+        and services that provide peace of mind.Our expertise in pets, technology, and data analytics has
+        allowed us to develop a system of ever-improving smart products for owners and vets - a system that
+        has the power to enrich each pet-owner relationship, and carries the potential to add years to every pet's life.
+    </p>
+    <h2> Why are routine vet checkups important?</h2>
+    <p style="font-family:verdana">You should book this routine physical exam with your veterinarian once or twice a
+        year, even when your pet appears to be perfectly healthy. These wellness checkups help your pet achieve and
+        maintain their ideal health. By taking your healthy
+        animal to visit the vet regularly, you allow your veterinarian the opportunity to assess your pet's general
+        health, and test for diseases, illnesses, and conditions that can be difficult to identify in their early stages
+        (including cancers and parasites). These conditions benefit from early treatment. During the checkup, your vet
+        has two goals: to prevent health conditions from developing where possible and to spot early symptoms of disease
+        so that they can be treated before they develop into more serious problems. </p>
+    <a href="CWS Project3.html">CLICK HERE TO BOOK AND APPOINTMENT FOR YOUR SWEET PET</a>
+    <center>
+        <h1 style="color:blue;">"BOOK AN APPOINTMENT NOW!!</h1>
+    </center>
+    <hr>
+    <form method="" action="" name="reg_form" onsubmit="return validate()">
+        <h2>Please Fill The Following Details For Your </h2>
+        <p style="font-size:30px"><b> PET'S VET VISIT</b></p>
+        <table style="font-size:20px">
+            <tr>
+                <td><label>First Name(Owner): </label></td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name(Owner)">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name(Owner): </label></td>
+                <td>
+                    <input type="text" name="lname" placeholder="Last Name(Owner)">
+                </td>
+            </tr>
+            <tr>
+                <td><label>First Name(Pet): </label></td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name(Pet)">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Date: </label></td>
+                <td>
+                    <input type="text" name="date" placeholder="Select Date">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Timing Slot </label></td>
+                <td>
+                    <select name="Select Timing Slot">
+                        <option value="SELECT">---SELECT---</option>
+                        <option value="10:00-11:00">10:00-11:00</option>
+                        <option value="11:00-12:00 ">11:00-12:00</option>
+                        <option value="01:00-02:00">01:00-02:00</option>
+                        <option value="02:00-03:00">02:00-03:00</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Address: </label></td>
+                <td>
+                    <input type="textarea" size="50" name="address" placeholder="Address">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender(PET): </label></td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="femele">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email Id: </label></td>
+                <td>
+                    <input type="text" name="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile: </label></td>
+                <td>
+                    <input type="number" name="mobile" placeholder="+91 XXXXX XXXXX">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Category: </label></td>
+                <td>
+                    <select name="CATEGORY">
+                        <option value="SELECT">---SELECT---</option>
+                        <option value="PET ACCESSORIES">PET ACCESSORIES</option>
+                        <option value="VACCINATION ">VACCINATION </option>
+                        <option value="HEALTH CHECK UP">HEALTH CHECK UP</option>
+                        <option value="CLOTHES">CLOTHES</option>
+                        <option value="OTHER.">OTHER.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
